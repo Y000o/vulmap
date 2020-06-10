@@ -1,5 +1,5 @@
 
-#!/usr/bin/bash
+/usr/bin/bash
 # Nse-nmap v1.1
 # Author: _Y000!_
 if [ "$(whereis nmap)" == "" ]; then
@@ -93,7 +93,7 @@ if [ "$vulmenu" == "01" ] || [ "$vulmenu" == "1" ];
 		bash "$0"
 		fi
 
-if [ "$nsemenu" == "02" ] || [ "$nsemenu" == "2" ];
+if [ "$vulmenu" == "02" ] || [ "$vulmenu" == "2" ];
 then
 	clear
 	echo -e " ---------------------------------------------------------------"
@@ -115,7 +115,7 @@ then
 	echo
 	echo -n -e "vulmap | XSS >"
 	read -r vulxss
-	if [ "$vulxss" == "01" ] || [ "$vulxss" == "1" ];
+	if [ "$vulxss" == "02" ] || [ "$vulxss" == "2" ];
 		then
 		echo
 		echo -n -e "Escribe la IP o la pagina: "
@@ -125,7 +125,7 @@ then
 		read -rsp $'Presiona alguna tecla para continuar ...\n' -n 1 key
 		bash "$0"
 
-		elif [ "$vulwordp" == "00" ] || [ "$vulwordp" == "0" ];
+		elif [ "$vulxss" == "00" ] || [ "$vulxss" == "0" ];
 		then
 		echo -e "\033[1;31m[!] Atras..\033[1;0m"
 		bash "$0"
