@@ -140,13 +140,13 @@ then
 		fi
 
 
-elif [ "$nsemenu" == "03" ] || [ "$nsemenu" == "3" ];
+elif [ "$vulmenu" == "03" ] || [ "$vulmenu" == "3" ];
 then
 echo
 echo -e "\033[1;31m[!] Creado por _Y000!_... \033[1;0m"
 sleep 10
 bash "$0"
-elif [ "$nsemenu" == "04" ] || [ "$nsemenu" == "4" ];
+elif [ "$vulmenu" == "04" ] || [ "$vulmenu" == "4" ];
 then
 exit
 fi
