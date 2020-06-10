@@ -1,5 +1,5 @@
 
-/usr/bin/bash
+#!/usr/bin/bash
 # Nse-nmap v1.1
 # Author: _Y000!_
 if [ "$(whereis nmap)" == "" ]; then
@@ -115,7 +115,7 @@ then
 	echo
 	echo -n -e "vulmap | XSS >"
 	read -r vulxss
-	if [ "$vulxss" == "02" ] || [ "$vulxss" == "2" ];
+	if [ "$vulxss" == "01" ] || [ "$vulxss" == "1" ];
 		then
 		echo
 		echo -n -e "Escribe la IP o la pagina: "
