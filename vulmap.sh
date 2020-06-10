@@ -58,6 +58,7 @@ if [ "$vulmenu" == "01" ] || [ "$vulmenu" == "1" ];
 	echo 
 	echo -e " [01] Fuerza bruta de usuarios"
 	echo -e " [02] Deteccion de Temas y Plugins"
+	echo -e " [00] Atras (menu)"
 	echo
 	echo -n -e "vulmap | WORDPRESS >"
 	read -r vulwordp
@@ -112,6 +113,7 @@ then
 	echo -e "----------------------------------------------------------------"
 	echo 
 	echo -e " [01] Deteccion de XSS"
+	echo -e " [00] Atras (menu)"
 	echo
 	echo -n -e "vulmap | XSS >"
 	read -r vulxss
