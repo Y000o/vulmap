@@ -94,7 +94,7 @@ if [ "$vulmenu" == "01" ] || [ "$vulmenu" == "1" ];
 		bash "$0"
 		fi
 
-if [ "$vulmenu" == "02" ] || [ "$vulmenu" == "2" ];
+elif [ "$vulmenu" == "02" ] || [ "$vulmenu" == "2" ];
 then
 	clear
 	echo -e " ---------------------------------------------------------------"
