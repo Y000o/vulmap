@@ -123,7 +123,7 @@ then
 		echo -n -e "Escribe la IP o la pagina: "
 		read -r iphostname
 		echo
-		nmap -sV --script http-dombased-xss.nse,http-phpself-xss.nse,http-stored-xss.nse,http-xssed.nse  -p 80,443  "$iphostname"
+		nmap -sV --script http-dombased-xss.nse,http-phpself-xss.nse,http-stored-xss.nse,http-xssed.nse,http-unsafe-output-escaping  -p 80,443  "$iphostname"
 		read -rsp $'Presiona alguna tecla para continuar ...\n' -n 1 key
 		bash "$0"
 
@@ -149,5 +149,4 @@ bash "$0"
 elif [ "$vulmenu" == "04" ] || [ "$vulmenu" == "4" ];
 then
 exit
-fi
 fi
