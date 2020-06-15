@@ -31,9 +31,9 @@ echo
 echo -e " [01] Escaneos dirigidos a WORDPRESS"
 echo -e " [02] Escaneo de inyeccion xss"
 echo -e " [03] Escaneo de inyeccion sql"
-echo -e " [04] Escanear FTP"
-echo -e " [05] Acerca de mi"
-echo -e " [06] Salir"
+echo -e " [05] Escanear un FTP"
+echo -e " [04] Acerca de mi"
+echo -e " [05] Salir"
 echo
 echo -n -e "vulmap > "
 read -r vulmenu
@@ -211,14 +211,14 @@ elif [ "$vulmenu" == "04" ] || [ "$vulmenu" == "4" ];
 	echo -e " [00] Atras (menu)"
 	echo
 	echo -n -e "vulmap | ftp >"
-	read -r vulsql
+	read -r vulftp
 	if [ "$vulftp" == "01" ] || [ "$vulftp" == "1" ];
 		then
 		echo
 		echo -n -e "Escribe la IP o la pagina: "
 		read -r iphostname
 		echo
-		nmap -sV --script ftp-anon.nse, ftp-bounce.nse, ftp-brute.nse, ftp-libopie.nse, ftp-proftpd-backdoor.nse, ftp-syst.nse  -p 21  "$iphostname"
+		nmap -sV --script ftp-anon.nse,ftp-bounce.nse,ftp-brute.nse,ftp-libopie.nse,ftp-proftpd-backdoor.nse,ftp-syst.nse  -p 21  "$iphostname"
 		read -rsp $'Presiona alguna tecla para continuar ...\n' -n 1 key
 		bash "$0"
 
@@ -244,5 +244,4 @@ bash "$0"
 elif [ "$vulmenu" == "06" ] || [ "$vulmenu" == "6" ];
 then
 exit
-fi
 fi
