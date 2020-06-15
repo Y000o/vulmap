@@ -31,9 +31,9 @@ echo
 echo -e " [01] Escaneos dirigidos a WORDPRESS"
 echo -e " [02] Escaneo de inyeccion xss"
 echo -e " [03] Escaneo de inyeccion sql"
-echo -e " [05] Salir"
-echo -e " [04] Acerca de mi"
-echo -e " [05] Salir"
+echo -e " [04] Escanear FTP"
+echo -e " [05] Acerca de mi"
+echo -e " [06] Salir"
 echo
 echo -n -e "vulmap > "
 read -r vulmenu
@@ -210,7 +210,7 @@ elif [ "$vulmenu" == "04" ] || [ "$vulmenu" == "4" ];
 	echo -e " [01] Escanear un servicio FTP"
 	echo -e " [00] Atras (menu)"
 	echo
-	echo -n -e "vulmap | SQL >"
+	echo -n -e "vulmap | ftp >"
 	read -r vulsql
 	if [ "$vulftp" == "01" ] || [ "$vulftp" == "1" ];
 		then
@@ -235,13 +235,13 @@ elif [ "$vulmenu" == "04" ] || [ "$vulmenu" == "4" ];
 		fi
 
 
-elif [ "$vulmenu" == "03" ] || [ "$vulmenu" == "3" ];
+elif [ "$vulmenu" == "05" ] || [ "$vulmenu" == "5" ];
 then
 echo
 echo -e "\033[1;31m[!] Creado por _Y000!_... \033[1;0m"
 sleep 10
 bash "$0"
-elif [ "$vulmenu" == "04" ] || [ "$vulmenu" == "4" ];
+elif [ "$vulmenu" == "06" ] || [ "$vulmenu" == "6" ];
 then
 exit
 fi
